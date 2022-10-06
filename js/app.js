@@ -28,16 +28,21 @@ spiritedAway();
 
 // Question two
 
-let answerTwo = prompt('Do I like Berserk? (RIP Kentaro)');
+function berserk() {
+  let answerTwo = prompt('Do I like Berserk? (RIP Kentaro)');
 
-if(answerTwo.toLowerCase() === 'yes'){
-  alert('Yes, I love Berserk, its by far the best manga out there');
-  score++;
-}else if(answerTwo.toLowerCase() === 'no'){
-  alert('wrong');
-}else{
-  alert('That is not an answer G');
+  if(answerTwo.toLowerCase() === 'yes'){
+    alert('Yes, I love Berserk, its by far the best manga out there');
+    score++;
+  }else if(answerTwo.toLowerCase() === 'no'){
+    alert('wrong');
+  }else{
+    alert('That is not an answer G');
+  }
 }
+berserk();
+
+
 
 // Question three
 
