@@ -7,17 +7,24 @@ let userName = prompt('Welcome to my icebreaker game! Where you can learn about 
 
 
 // Question one
-let answerOne = prompt(`Okay ${userName} Lets begin the game. Yes or No answers only. Do I like Spirited Away?`);
+
+function spiritedAway(){
+  let answerOne = prompt(`Okay ${userName} Lets begin the game. Yes or No answers only. Do I like Spirited Away?`);
 
 
-if(answerOne.toLowerCase() === 'yes'){
-  alert('Hell yeah, who doesn\'t like Spirited Away?');
-  score++;
-}else if(answerOne.toLowerCase() === 'no'){
-  alert('oof, wrong answer.');
-}else{
-  alert('That is not an answer G');
+  if(answerOne.toLowerCase() === 'yes'){
+    alert('Hell yeah, who doesn\'t like Spirited Away?');
+    score++;
+  }else if(answerOne.toLowerCase() === 'no'){
+    alert('oof, wrong answer.');
+  }else{
+    alert('That is not an answer G');
+  }
 }
+
+spiritedAway();
+
+
 
 // Question two
 
