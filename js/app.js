@@ -8,16 +8,16 @@ let userName = prompt('Welcome to my icebreaker game! Where you can learn about 
 
 // Question one
 
-function spiritedAway(){
+function spiritedAway() {
   let answerOne = prompt(`Okay ${userName} Lets begin the game. Yes or No answers only. Do I like Spirited Away?`);
 
 
-  if(answerOne.toLowerCase() === 'yes'){
+  if (answerOne.toLowerCase() === 'yes') {
     alert('Hell yeah, who doesn\'t like Spirited Away?');
     score++;
-  }else if(answerOne.toLowerCase() === 'no'){
+  } else if (answerOne.toLowerCase() === 'no') {
     alert('oof, wrong answer.');
-  }else{
+  } else {
     alert('That is not an answer G');
   }
 }
@@ -31,12 +31,12 @@ spiritedAway();
 function berserk() {
   let answerTwo = prompt('Do I like Berserk? (RIP Kentaro)');
 
-  if(answerTwo.toLowerCase() === 'yes'){
+  if (answerTwo.toLowerCase() === 'yes') {
     alert('Yes, I love Berserk, its by far the best manga out there');
     score++;
-  }else if(answerTwo.toLowerCase() === 'no'){
+  } else if (answerTwo.toLowerCase() === 'no') {
     alert('wrong');
-  }else{
+  } else {
     alert('That is not an answer G');
   }
 }
@@ -49,12 +49,12 @@ berserk();
 function hobbit() {
   let answerThree = prompt('Do I like Lord of the Rings?');
 
-  if(answerThree.toLowerCase() === 'yes'){
+  if (answerThree.toLowerCase() === 'yes') {
     alert('Yes, but I couldnt read the books other than The Hobbit. Im not a fan of Tolkiens writing style');
     score++;
-  }else if(answerThree.toLowerCase() === 'no'){
+  } else if (answerThree.toLowerCase() === 'no') {
     alert('wrong.');
-  }else{
+  } else {
     alert('That is not an answer G');
   }
 }
@@ -64,14 +64,28 @@ hobbit();
 
 // Question four
 
+function starWars() {
+  let answerFour = prompt('Do I like the Star Wars Prequels?');
+
+  if (answerFour.toLowerCase() === 'yes') {
+    alert('Im a real Star Wars enjoyer.');
+    score++;
+  } else if (answerFour.toLowerCase() === 'no') {
+    alert('wrong.');
+  } else {
+    alert('That is not an answer G');
+  }
+}
+starWars();
+
 let answerFour = prompt('Do I like the Star Wars Prequels?');
 
-if(answerFour.toLowerCase() === 'yes'){
+if (answerFour.toLowerCase() === 'yes') {
   alert('Im a real Star Wars enjoyer.');
   score++;
-}else if(answerFour.toLowerCase() === 'no'){
+} else if (answerFour.toLowerCase() === 'no') {
   alert('wrong.');
-}else{
+} else {
   alert('That is not an answer G');
 }
 
@@ -79,12 +93,12 @@ if(answerFour.toLowerCase() === 'yes'){
 
 let answerFive = prompt('Do I like Harry Potter? (the story not the author)');
 
-if(answerFive.toLowerCase() === 'yes'){
+if (answerFive.toLowerCase() === 'yes') {
   alert('Im watching a movie every weekend until Halloween :)');
   score++;
-}else if(answerFive.toLowerCase() === 'no'){
+} else if (answerFive.toLowerCase() === 'no') {
   alert('wrong');
-}else{
+} else {
   alert('That is not an answer G');
 }
 
@@ -96,13 +110,13 @@ let siblings = 6;
 
 let trial = false;
 
-for(let i = 0; i < guessAmount ; i++){
+for (let i = 0; i < guessAmount; i++) {
   let userGuess = prompt('Now for a number, you only get 4 chances on this one. How many siblings do I have?');
-  if(userGuess > siblings){
+  if (userGuess > siblings) {
     alert('too high');
-  }else if(userGuess < siblings){
+  } else if (userGuess < siblings) {
     alert('too low');
-  }else{
+  } else {
     alert('you got it!');
     trial = true;
     score++;
@@ -110,7 +124,7 @@ for(let i = 0; i < guessAmount ; i++){
   }
 }
 
-if(trial === false){
+if (trial === false) {
   alert(`you're out of guesses, the correct answer was ${siblings}`);
 }
 
@@ -118,30 +132,30 @@ if(trial === false){
 
 let guessAmount2 = 6;
 
-let states = ['california' , 'washington' , 'utah' , 'colorado', 'arizona', 'missouri', 'hawaii', 'nevada'];
+let states = ['california', 'washington', 'utah', 'colorado', 'arizona', 'missouri', 'hawaii', 'nevada'];
 
 let inStates = false;
 
-for(let i = 0; i < guessAmount2; i++){
+for (let i = 0; i < guessAmount2; i++) {
   let userGuess = prompt('Name a state I\'ve been to?');
 
-  for(let j = 0; j < states.length; j++){
-    if(userGuess.toLowerCase() === states[j]){
+  for (let j = 0; j < states.length; j++) {
+    if (userGuess.toLowerCase() === states[j]) {
       inStates = true;
       alert('you\'re correct');
       score++;
     }
   }
-  while(inStates === false){
+  while (inStates === false) {
     alert('Wrong, try again.');
     break;
   }
-  if(inStates === true){
+  if (inStates === true) {
     break;
   }
 }
 
-if(inStates === false){
+if (inStates === false) {
   alert(`You're out of guesses, some answers were ${states.join(', ')}`);
 }
 
