@@ -80,7 +80,7 @@ let siblings = 6;
 let trial = false;
 
 for(let i = 0; i < guessAmount ; i++){
-  let userGuess = prompt('You only get 4 chances on this one. How many siblings do I have?');
+  let userGuess = prompt('Now for a number, you only get 4 chances on this one. How many siblings do I have?');
   if(userGuess > siblings){
     alert('too high');
   }else if(userGuess < siblings){
@@ -94,7 +94,7 @@ for(let i = 0; i < guessAmount ; i++){
 }
 
 if(trial === false){
-  alert(`youre out of guesses the correct answer was ${siblings}`);
+  alert(`you're out of guesses, the correct answer was ${siblings}`);
 }
 
 //Question 7
