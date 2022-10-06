@@ -1,68 +1,134 @@
 'use strict';
 
+let score = 0;
 
-let userName = prompt('Welcome to the magical 5 questions game! First thing first is introductions. I am Cody, Whats your name?');
+let userName = prompt('Welcome to my icebreaker game! Where you can learn about me and I can learn about you. Now for introductions. I am Cody, Whats your name?');
 
 
 
 // Question one
-let answerOne = prompt('Okay ' + userName + ' Lets begin the game. Yes or No answers only. Do you like Spirited Away?');
+let answerOne = prompt(`Okay ${userName} Lets begin the game. Yes or No answers only. Do I like Spirited Away?`);
 
 
 if(answerOne.toLowerCase() === 'yes'){
-  alert('Hell yeah me too, who doesnt like Spirited Away?');
+  alert('Hell yeah, who doesnt like Spirited Away?');
+  score++;
 }else if(answerOne.toLowerCase() === 'no'){
-  alert('oof, wrong answer, watch it then come back.');
+  alert('oof, wrong answer.');
 }else{
   alert('That is not an answer G');
 }
 
 // Question two
 
-let answerTwo = prompt('I love Berserk, its by far the best manga out there, do you? (RIP Kentaro)');
+let answerTwo = prompt('Do I like Berserk? (RIP Kentaro)');
 
 if(answerTwo.toLowerCase() === 'yes'){
-  alert('Struggle on, struggler');
+  alert('Yes, I love Berserk, its by far the best manga out there');
+  score++;
 }else if(answerTwo.toLowerCase() === 'no'){
-  alert('Everyones entitled to their own opinions. Even if they are wrong.');
+  alert('wrong');
 }else{
   alert('That is not an answer G');
 }
 
 // Question three
 
-let answerThree = prompt('Do you like Lord of the Rings?');
+let answerThree = prompt('Do I like Lord of the Rings?');
 
 if(answerThree.toLowerCase() === 'yes'){
-  alert('Me too man, I couldnt read the books other than The Hobbit though');
+  alert('Yes, but I couldnt read the books other than The Hobbit. Im not a fan of Tolkiens writing style');
+  score++;
 }else if(answerThree.toLowerCase() === 'no'){
-  alert('Everyones entitled to their own opinions. Even if they are wrong.');
+  alert('wrong.');
 }else{
   alert('That is not an answer G');
 }
 
 // Question four
 
-let answerFour = prompt('Do you like the Star Wars Prequels?');
+let answerFour = prompt('Do I like the Star Wars Prequels?');
 
 if(answerFour.toLowerCase() === 'yes'){
-  alert('Finally a real Star Wars enjoyer.');
+  alert('Im a real Star Wars enjoyer.');
+  score++;
 }else if(answerFour.toLowerCase() === 'no'){
-  alert('Stop being a prude.');
+  alert('wrong.');
 }else{
   alert('That is not an answer G');
 }
 
 // Question five
 
-let answerFive = prompt('Do you like Harry Potter? (the story not the author)');
+let answerFive = prompt('Do I like Harry Potter? (the story not the author)');
 
 if(answerFive.toLowerCase() === 'yes'){
   alert('Im watching a movie every weekend until Halloween :)');
+  score++;
 }else if(answerFive.toLowerCase() === 'no'){
-  alert('Must be a death eater.');
+  alert('wrong');
 }else{
   alert('That is not an answer G');
 }
 
-alert(userName + ' you may enter.');
+//Question Six
+
+let guessAmount = 4;
+
+let siblings = 6;
+
+let trial = false;
+
+for(let i = 0; i < guessAmount ; i++){
+  let userGuess = prompt('You only get 4 chances on this one. How many siblings do I have?');
+  if(userGuess > siblings){
+    alert('too high');
+  }else if(userGuess < siblings){
+    alert('too low');
+  }else{
+    alert('you got it!');
+    trial = true;
+    score++;
+    break;
+  }
+}
+
+if(trial === false){
+  alert(`youre out of guesses the correct answer was ${siblings}`);
+}
+
+//Question 7
+
+let guessAmount2 = 6;
+
+let states = ['california' , 'washington' , 'utah' , 'colorado', 'arizona', 'missouri', 'hawaii', 'nevada'];
+
+let inStates = false;
+
+for(let i = 0; i < guessAmount2; i++){
+  let userGuess = prompt('Name a state I\'ve been to?');
+
+  for(let j = 0; j < states.length; j++){
+    if(userGuess.toLowerCase() === states[j]){
+      inStates = true;
+      alert('you\'re correct');
+      score++;
+    }
+  }
+  while(inStates === false){
+    alert('Wrong, try again.');
+    break;
+  }
+  if(inStates === true){
+    break;
+  }
+}
+
+if(inStates === false){
+  alert(`You're out of guesses, some answers were ${states.join(', ')}`);
+}
+
+
+
+
+alert(`${userName} your score was ${score} out of 7, you may enter.`);

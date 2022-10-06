@@ -22,7 +22,7 @@ header {
 
 #content{
   text-align: center;
-  height: 800px;
+  height: 50%;
   width: 60%;
   padding: 10px;
   background-color: rgb(201, 223, 219);
@@ -32,7 +32,7 @@ header {
   border-color: rgb(77, 73, 73);
 }
 
-h1 {
+h2 {
   font-weight: 700;
   font-size: larger;
 }
@@ -52,6 +52,12 @@ h1 {
 li {
   padding: 10px;
 }
+
+ol{
+  list-style: decimal;
+  list-style-position: inside;
+}
+
 
 ::-webkit-scrollbar {
   display: none;
