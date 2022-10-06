@@ -126,34 +126,39 @@ siblings();
 
 //Question 7
 
-let guessAmount2 = 6;
+function states() {
+  let guessAmount2 = 6;
 
-let states = ['california', 'washington', 'utah', 'colorado', 'arizona', 'missouri', 'hawaii', 'nevada'];
+  let states = ['california', 'washington', 'utah', 'colorado', 'arizona', 'missouri', 'hawaii', 'nevada'];
 
-let inStates = false;
+  let inStates = false;
 
-for (let i = 0; i < guessAmount2; i++) {
-  let userGuess = prompt('Name a state I\'ve been to?');
+  for (let i = 0; i < guessAmount2; i++) {
+    let userGuess = prompt('Name a state I\'ve been to?');
 
-  for (let j = 0; j < states.length; j++) {
-    if (userGuess.toLowerCase() === states[j]) {
-      inStates = true;
-      alert('you\'re correct');
-      score++;
+    for (let j = 0; j < states.length; j++) {
+      if (userGuess.toLowerCase() === states[j]) {
+        inStates = true;
+        alert('you\'re correct');
+        score++;
+      }
+    }
+    while (inStates === false) {
+      alert('Wrong, try again.');
+      break;
+    }
+    if (inStates === true) {
+      break;
     }
   }
-  while (inStates === false) {
-    alert('Wrong, try again.');
-    break;
-  }
-  if (inStates === true) {
-    break;
+
+  if (inStates === false) {
+    alert(`You're out of guesses, some answers were ${states.join(', ')}`);
   }
 }
 
-if (inStates === false) {
-  alert(`You're out of guesses, some answers were ${states.join(', ')}`);
-}
+states();
+
 
 
 
