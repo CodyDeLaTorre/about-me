@@ -46,16 +46,21 @@ berserk();
 
 // Question three
 
-let answerThree = prompt('Do I like Lord of the Rings?');
+function hobbit() {
+  let answerThree = prompt('Do I like Lord of the Rings?');
 
-if(answerThree.toLowerCase() === 'yes'){
-  alert('Yes, but I couldnt read the books other than The Hobbit. Im not a fan of Tolkiens writing style');
-  score++;
-}else if(answerThree.toLowerCase() === 'no'){
-  alert('wrong.');
-}else{
-  alert('That is not an answer G');
+  if(answerThree.toLowerCase() === 'yes'){
+    alert('Yes, but I couldnt read the books other than The Hobbit. Im not a fan of Tolkiens writing style');
+    score++;
+  }else if(answerThree.toLowerCase() === 'no'){
+    alert('wrong.');
+  }else{
+    alert('That is not an answer G');
+  }
 }
+hobbit();
+
+
 
 // Question four
 
