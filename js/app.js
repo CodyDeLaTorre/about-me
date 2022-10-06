@@ -78,6 +78,8 @@ function starWars() {
 }
 starWars();
 
+// Question five
+
 function harryPotter() {
   let answerFive = prompt('Do I like Harry Potter? (the story not the author)');
 
@@ -92,36 +94,35 @@ function harryPotter() {
 }
 harryPotter();
 
-
-// Question five
-
-
-
 //Question Six
 
-let guessAmount = 4;
+function siblings() {
+  let guessAmount = 4;
 
-let siblings = 6;
+  let siblings = 6;
 
-let trial = false;
+  let trial = false;
 
-for (let i = 0; i < guessAmount; i++) {
-  let userGuess = prompt('Now for a number, you only get 4 chances on this one. How many siblings do I have?');
-  if (userGuess > siblings) {
-    alert('too high');
-  } else if (userGuess < siblings) {
-    alert('too low');
-  } else {
-    alert('you got it!');
-    trial = true;
-    score++;
-    break;
+  for (let i = 0; i < guessAmount; i++) {
+    let userGuess = prompt('Now for a number, you only get 4 chances on this one. How many siblings do I have?');
+    if (userGuess > siblings) {
+      alert('too high');
+    } else if (userGuess < siblings) {
+      alert('too low');
+    } else {
+      alert('you got it!');
+      trial = true;
+      score++;
+      break;
+    }
+  }
+
+  if (trial === false) {
+    alert(`you're out of guesses, the correct answer was ${siblings}`);
   }
 }
+siblings();
 
-if (trial === false) {
-  alert(`you're out of guesses, the correct answer was ${siblings}`);
-}
 
 //Question 7
 
