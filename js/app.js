@@ -2,7 +2,7 @@
 
 let score = 0;
 
-let userName = prompt('Welcome to my icebreaker game! Where you can learn about me and I can learn about you. Now for introductions. I am Cody, Whats your name?');
+let userName = prompt('Welcome to my icebreaker game! Where you can learn about me and I can learn about you. Now for introductions. I am Cody, What\'s your name?');
 
 
 
@@ -11,7 +11,7 @@ let answerOne = prompt(`Okay ${userName} Lets begin the game. Yes or No answers 
 
 
 if(answerOne.toLowerCase() === 'yes'){
-  alert('Hell yeah, who doesnt like Spirited Away?');
+  alert('Hell yeah, who doesn\'t like Spirited Away?');
   score++;
 }else if(answerOne.toLowerCase() === 'no'){
   alert('oof, wrong answer.');
