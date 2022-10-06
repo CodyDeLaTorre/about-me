@@ -78,29 +78,24 @@ function starWars() {
 }
 starWars();
 
-let answerFour = prompt('Do I like the Star Wars Prequels?');
+function harryPotter() {
+  let answerFive = prompt('Do I like Harry Potter? (the story not the author)');
 
-if (answerFour.toLowerCase() === 'yes') {
-  alert('Im a real Star Wars enjoyer.');
-  score++;
-} else if (answerFour.toLowerCase() === 'no') {
-  alert('wrong.');
-} else {
-  alert('That is not an answer G');
+  if (answerFive.toLowerCase() === 'yes') {
+    alert('Im watching a movie every weekend until Halloween :)');
+    score++;
+  } else if (answerFive.toLowerCase() === 'no') {
+    alert('wrong');
+  } else {
+    alert('That is not an answer G');
+  }
 }
+harryPotter();
+
 
 // Question five
 
-let answerFive = prompt('Do I like Harry Potter? (the story not the author)');
 
-if (answerFive.toLowerCase() === 'yes') {
-  alert('Im watching a movie every weekend until Halloween :)');
-  score++;
-} else if (answerFive.toLowerCase() === 'no') {
-  alert('wrong');
-} else {
-  alert('That is not an answer G');
-}
 
 //Question Six
 
