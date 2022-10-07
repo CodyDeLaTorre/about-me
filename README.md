@@ -1,10 +1,10 @@
-# Lab - 2
+# Lab - 2-4
 
 ## about-me
 
 About me page for Lab 2 in Code Fellows 201
 
-## Author: Cody De La Torre
+## Authors: Cody De La Torre / Aubrey Corsetti (app.js) / Ricardo Soto (app.js)
 
 ### Resources
 
