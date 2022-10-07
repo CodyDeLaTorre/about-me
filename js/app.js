@@ -4,18 +4,16 @@ let score = 0;
 
 let userName = prompt('Welcome to my icebreaker game! Where you can learn about me and I can learn about you. Now for introductions. I am Cody, What\'s your name?');
 
-
-
 // Question one
 
 function spiritedAway() {
   let answerOne = prompt(`Okay ${userName} Lets begin the game. Yes or No answers only. Do I like Spirited Away?`);
 
 
-  if (answerOne.toLowerCase() === 'yes') {
+  if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y') {
     alert('Hell yeah, who doesn\'t like Spirited Away?');
     score++;
-  } else if (answerOne.toLowerCase() === 'no') {
+  } else if (answerOne.toLowerCase() === 'no' || answerOne.toLowerCase() === 'n') {
     alert('oof, wrong answer.');
   } else {
     alert('That is not an answer G');
@@ -24,17 +22,15 @@ function spiritedAway() {
 
 spiritedAway();
 
-
-
 // Question two
 
 function berserk() {
   let answerTwo = prompt('Do I like Berserk? (RIP Kentaro)');
 
-  if (answerTwo.toLowerCase() === 'yes') {
+  if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y') {
     alert('Yes, I love Berserk, its by far the best manga out there');
     score++;
-  } else if (answerTwo.toLowerCase() === 'no') {
+  } else if (answerTwo.toLowerCase() === 'no' || answerTwo.toLowerCase() === 'n') {
     alert('wrong');
   } else {
     alert('That is not an answer G');
@@ -42,17 +38,15 @@ function berserk() {
 }
 berserk();
 
-
-
 // Question three
 
 function hobbit() {
   let answerThree = prompt('Do I like Lord of the Rings?');
 
-  if (answerThree.toLowerCase() === 'yes') {
+  if (answerThree.toLowerCase() === 'yes' || answerThree.toLowerCase() === 'y') {
     alert('Yes, but I couldnt read the books other than The Hobbit. Im not a fan of Tolkiens writing style');
     score++;
-  } else if (answerThree.toLowerCase() === 'no') {
+  } else if (answerThree.toLowerCase() === 'no' || answerThree.toLowerCase() === 'n') {
     alert('wrong.');
   } else {
     alert('That is not an answer G');
@@ -60,17 +54,15 @@ function hobbit() {
 }
 hobbit();
 
-
-
 // Question four
 
 function starWars() {
   let answerFour = prompt('Do I like the Star Wars Prequels?');
 
-  if (answerFour.toLowerCase() === 'yes') {
+  if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y') {
     alert('Im a real Star Wars enjoyer.');
     score++;
-  } else if (answerFour.toLowerCase() === 'no') {
+  } else if (answerFour.toLowerCase() === 'no' || answerFour.toLowerCase() === 'n') {
     alert('wrong.');
   } else {
     alert('That is not an answer G');
@@ -83,10 +75,10 @@ starWars();
 function harryPotter() {
   let answerFive = prompt('Do I like Harry Potter? (the story not the author)');
 
-  if (answerFive.toLowerCase() === 'yes') {
+  if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
     alert('Im watching a movie every weekend until Halloween :)');
     score++;
-  } else if (answerFive.toLowerCase() === 'no') {
+  } else if (answerFive.toLowerCase() === 'no' || answerFive.toLowerCase() === 'n') {
     alert('wrong');
   } else {
     alert('That is not an answer G');
@@ -158,8 +150,6 @@ function states() {
 }
 
 states();
-
-
 
 
 
