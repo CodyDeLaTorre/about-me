@@ -35,6 +35,7 @@ header {
 h2 {
   font-weight: 700;
   font-size: larger;
+  padding-bottom: .5rem;
 }
 
 .about{
@@ -61,4 +62,12 @@ ol{
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+
+button {
+  cursor: pointer;
+  background: #2bb1cf7c;
+  border-color: rgba(165, 159, 159, 0.295);
+  border-radius: 20px;
 }
